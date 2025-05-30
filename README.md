@@ -163,5 +163,19 @@ Input:
 
 Output:
 3 hours ago
+```
 
+```bash
+const yourBirthDate = '25/07/1994';
+console.log("Input date:", yourBirthDate);
+const [day, month, year] = yourBirthDate.split('/').map(Number);
+const dateObject = new Date(year, month - 1, day);
+const message = FormattedTime({ time: dateObject });
+console.log("Formatted Time message:", message);
+```
+
+Output 
+```bash
+Input date: 25/07/1994
+Formatted Time message: 30 years ago
 ```
